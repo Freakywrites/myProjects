@@ -1,0 +1,270 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    color:burlywood;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+header{
+    background:-webkit-linear-gradient(left, white,green);
+}
+
+
+.desktop-view{
+    display: flex;
+    list-style:none;
+
+}
+
+.desktop-view li{
+    margin-right: 7em;
+}
+
+.desk-links{
+    text-decoration: none;
+    color:burlywood;
+    font-size: 1.2rem;
+    text-shadow: black 2px 2px;
+}
+.desk-links:hover{
+    background-color: black;
+    border-radius: 15px;
+    color:burlywood
+}
+
+.safari{
+    font-size: 2rem;
+}
+
+/*HAMBURGER MENU*/
+.hamburger span{
+    display: block;
+    width:30px;
+    height:3px;
+    background-color: brown;
+    margin-bottom: 5px;
+    /* display: none; for desktop */
+
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+
+.mobile-view{
+    width:200px;
+    background:-webkit-linear-gradient(left, black, rgb(57, 224, 57));
+    height: 100%;
+    position: absolute;
+    left:-200px; /*mistake*/
+    /* display: none; for desktop */
+}
+
+
+.mobile-view li{
+    margin-bottom: 3em;
+    padding: 2em;
+    list-style: none;
+
+    
+}
+
+.mobile-links{
+    text-decoration: none;
+    color:burlywood;
+    text-shadow: black 2px 2px;
+    text-align: center;
+}
+
+body{
+background: -webkit-linear-gradient(left, rgb(63, 63, 63), burlywood);
+}
+
+/*BODY TEXT */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-text{
+    margin-top: 5em;
+    margin-left: 6em;
+    text-align: center;
+}
+/*MODAL FORM*/
+
+
+
+
+
+
+
+
+
+/*TRANSITION*/
+nav.mobile-view{
+    transition: all ease-in .4s;
+}
+
+
+
+
+
+/*OPEN-STATE*/
+
+.hide-hamburger{
+    left:0; /*mistake*/
+}
+.hamburger.hide-hamburger span:nth-child(1){
+    transform:rotate(45deg) translateY(10px);
+
+}
+.hamburger.hide-hamburger span:nth-child(2){
+    opacity:0;
+    width:0;
+
+}
+.hamburger.hide-hamburger span:nth-child(3){
+    transform:rotate(-45deg) translateY(-10px);
+
+
+}
+
+/*TEXTS*/
+
+.big-text{
+    font-size: 2.4rem;
+    font-weight:700;
+    margin-bottom: 1.3em;
+    padding:0 3em;
+    text-align: center;
+    color:green
+
+}
+
+.more-info , .more{
+    font-size: 1.7rem;
+    margin-bottom: .8em;
+    text-shadow: greenyellow 2px 2px 3px;
+    
+}
+
+#sign{
+    border-radius: 15px;
+    padding: .4em 2em;
+    color:white;
+    background-color: green;
+    cursor: pointer;
+}
+#sign2{
+    border-radius: 15px;
+    padding: .4em 2em;
+    color:white;
+    background-color: green;
+    cursor: pointer;
+}
+#sign3{
+    border-radius: 15px;
+    padding: .4em 2em;
+    color:white;
+    background-color: green;
+    cursor: pointer;
+}
+.sign{
+    border-radius: 15px;
+    padding: .4em 2em;
+    color:white;
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.green{
+    color:white;
+    text-shadow: black 2px 2px;
+}
+
+/*MODAL STYLE*/
+
+.BG-Modal{
+    background-color: rgba(0, 0, 0,0.7);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left: 0;/*change*/
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.clicked-close{
+    display: flex;
+}
+
+.Modal-content{
+    width:500px;
+    height:300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding:2em;
+    position: relative;
+
+
+
+}
+
+input{
+    width:50%;
+    display: block;
+    margin:15px auto;
+}
+
+.close{
+    position:absolute;
+    top:0;
+    right:14px;
+    font-size: 43px;
+    transform:rotate(45deg);
+    cursor:pointer;
+     
+}
+
+@media (max-width:1400px) {
+
+    .hamburger span{
+        display: none;
+    }
+    
+}
+@media (max-width:950px) {
+
+    .hamburger span{
+        display: block;
+    }
+    .desktop-view li{
+        display: none;
+    }
+    .big-text{
+        font-size: 2rem;
+        font-weight:600;
+        padding: 1em;
+        text-align:left;
+    
+    }
+    
+.body-text{
+    margin-top: 5em;
+    margin-left: 1em;
+    text-align: center;
+}
+}
